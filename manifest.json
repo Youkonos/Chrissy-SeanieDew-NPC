@@ -1,0 +1,14 @@
+{
+    "Name": "Chrissy NPC",
+    "Author": "Written by SeanieDew, Coded by Jello",
+    "Version": "1.0.0",
+    "Description": "A mayo-tastic potential girlfriend.",
+    "UniqueID": "Seanie.Chrissy",
+    "UpdateKeys": ["Nexus:????"],
+    "Dependencies": [
+
+     ],
+    "ContentPackFor": {
+       "UniqueID": "Pathoschild.ContentPatcher"
+    }
+ }
