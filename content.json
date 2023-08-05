@@ -1,0 +1,154 @@
+{
+    "Format": "1.28.0",
+//Config commented out atm.
+    "ConfigSchema": {
+      "Override Generic Dialogue": {
+     	 "AllowValues": "true, false",
+     			 "Default": "true",
+     				 "Description": "Overwrites the bouquet acceptance dialogue. Please turn this off if you do not plan on dating Chrissy.",
+     					 },
+
+    },
+
+/*
+    "DynamicTokens": [
+
+    ],
+*/
+
+"Changes": [
+//B A S E   L O A D I N G
+
+
+{
+  //Chrissy Base Disposiiton
+  "LogName": "1 Load Chrissy Disposition",
+  "Action": "EditData",
+  "Target": "Data/NPCDispositions",
+  "Entries": {
+    "Chrissy": "adult/rude/outgoing/negative/female/datable//other/spring 18/Lewis 'Uncle Lew'/ManorHouse 2 8/Chrissy"
+    }
+},
+
+//Load Stuff
+      {
+        "LogName": "1 Load Chrissy Char",
+      "Action": "Load",
+       "Target": "Characters/Chrissy",
+       "FromFile": "assets/Characters/Chrissy.png",
+          },
+
+      {
+      "LogName": "1 Load Chrissy Port",
+       "Action": "Load",
+       "Target": "Portraits/Chrissy",
+        "FromFile": "assets/Portraits/Chrissy.png",
+          },
+  //Load Dialogue
+
+  {				"LogName": "1Load Base Dialogue",
+          "Action": "Load",
+          "Target": "Characters/Dialogue/Chrissy",
+          "FromFile": "data/Dialogue/Chrissy.json",
+  },
+
+
+    {				"LogName": "1Load Marriage Dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/MarriageDialogueChrissy",
+            "FromFile": "data/Dialogue/MarriageDialogueChrissy.json",
+    },
+
+  //Load Schedule
+  {
+      "LogName": "1Load Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Chrissy",
+      "FromFile": "data/Schedule.json"
+    },
+
+
+//Gift tastes
+  {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+          "Chrissy": "This is incredible! I wanna slurp yah! $6/-5 305 27	306 307 308 807/Wow, you’re actually not a complete moron. This is pretty neat. $1//This is cringe. $2//This reminds me of the time my little brother drank a candle, are you as thick as him? $2/-4/I AM THE LORD OF DARKNESS. $8// "
+      }
+  },
+
+
+  //ANIMATIONS
+
+{
+      "LogName": "Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+          "chrissy_sleep": "29/29/29",
+
+      }
+  },
+
+
+//MAIL
+
+{
+    "Action": "EditData",
+    "Target": "Data/mail",
+    "Entries": {
+
+    "ChrissyMail.SecretWoods": "Hi @,^I want to explain everything, so please meet me in the secret forest tomorrow at noon. I promise I’m a good person.^^Thanks.^-Chrissy[#]Meet Me in the Woods",
+    "ChrissyMail.Picnic": "Hey @,^Next Tuesday, come to the Cindersnap Forest. I want to do something special for all that you’ve done for me.^^And don’t forget to bring your juicy bottom.^^-Chrissy[#]@.",
+    "ChrissyMail.MagicShow": "Dear @,^Tomorrow I’ve decided to host a magic show in town, and everyone is invited. It would mean the world to me if you came.^I cannot wait to see you.^^You know what I mean. Don’t make me say it to your face, you moron.^^-Chrissy[#]You better be there!",
+    },
+},
+
+//Engagement Dialogue
+{
+"Action": "EditData",
+"Target": "Data/EngagementDialogue",
+"Entries": {
+  "Chrissy0": "MARRIAGE IS AWESOME. I CANNOT WAIT. $4#$e# FOREVER LOVE.$1",
+  "Chrissy1": "I seriously can’t believe I’m so lucky. $4#$e# Back on my home planet, we don’t do weddings, so I never thought this would happen to me! $4",
+  },
+},
+
+//Base Rain dialogue
+{
+  "Action": "EditData",
+  "Target": "Characters/Dialogue/rainy",
+  "Entries": {
+      "Chrissy": "I love rainy days. $1#$e# Just the sound of the drops hitting the window soothes me. $1#$b# I’m not going soft, I just like the sky water! $4",
+      },
+  },
+
+  //Fighting with Lewis dialogue.
+  {
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Chrissy",
+    "When": {"HasSeenEvent |contains=1769804": false,
+              "HasSeenEvent |contains=1769802": true,},
+    "Entries": {
+        "Sun6": "I hope I can talk to my uncle again soon. $3",
+        "Mon6": "Things have been really awkward back at my house lately. $2",
+        "Tue6": "Just go away for today. $2",
+        },
+    },
+
+
+
+//Ten heart rain dialogue
+{
+  "Action": "EditData",
+  "Target": "Characters/Dialogue/rainy",
+  "When": {"Hearts:Chrissy": "9, 10, 11, 12, 13, 14"},
+  "Entries": {
+      "Chrissy": "I love rainy days almost as much as I love you $1",
+      },
+  },
+
+
+
+    ]
+}
