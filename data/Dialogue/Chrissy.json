@@ -1,4 +1,8 @@
 {
+//Event Lines
+"event_MagicTruth": "Guess I need a little more practice $3#$b# It’s been a while since I did a trick like that. $3",
+"event_MagicLie": "I know I didn’t actually get it. $1#$b# I’m way out of practice. $6#$b# You’re sweet for lying, but next time just tell me the truth so I can get better, dingbat. $7",
+
 "spring_12": "Running around and searching for some eggs? Yeah, I’m all good.",
 "spring_23": "I’m supposed to put on some stupid white dress and dance around tomorrow? $6#$b# Fat chance. $6",
 "summer_10": "Me and the Governor don’t get along very well. $4#$e# I’d like to skin him. $7",
