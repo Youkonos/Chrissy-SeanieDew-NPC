@@ -92,18 +92,38 @@
       }
   },
 
-
-  //ANIMATIONS
+//Spouse Areas
 
 {
-      "LogName": "Animations",
+      "LogName": "Spouse Room",
       "Action": "EditData",
-      "Target": "Data/animationDescriptions",
+      "Target": "Data/SpouseRooms",
       "Entries": {
-          "chrissy.seanie_sleep": "29/29/29",
+          "Chrissy.Seanie": "spouseRooms/4",
 
       }
   },
+
+  {
+        "LogName": "Spouse Patio",
+        "Action": "EditData",
+        "Target": "Data/SpousePatios",
+        "Entries": {
+            "Chrissy.Seanie": "spousePatios/4",
+
+        }
+    },
+
+  //ANIMATIONS
+  {
+        "LogName": "Animations",
+        "Action": "EditData",
+        "Target": "Data/animationDescriptions",
+        "Entries": {
+            "chrissy.seanie_sleep": "29/29/29",
+
+        }
+    },
 
 
 //MAIL
@@ -113,7 +133,7 @@
     "Target": "Data/mail",
     "Entries": {
 
-    "ChrissyMail.SecretWoods": "Hi @,^I want to explain everything, so please meet me in the secret forest tomorrow at noon. I promise I'm a good person.^^Thanks.^-Chrissy[#]Meet Me in the Woods",
+    "ChrissyMail.SecretWoods": "Hi @,^I want to explain everything, so please meet me in the secret forest at noon. I promise I'm a good person.^^Thanks.^-Chrissy[#]Meet Me in the Woods",
     "ChrissyMail.Picnic": "Hey @,^Next Tuesday, come to the Cindersnap Forest. I want to do something special for all that you've done for me.^^And don't forget to bring your juicy bottom.^^-Chrissy[#]@.",
     "ChrissyMail.MagicShow": "Dear @,^Tomorrow I've decided to host a magic show in town, and everyone is invited. It would mean the world to me if you came.^I cannot wait to see you.^^You know what I mean. Don't make me say it to your face, you moron.^^-Chrissy[#]You better be there!",
     },
@@ -206,7 +226,7 @@
      "Action": "EditData",
      "Target": "Data/Events/Town",
      "Entries": {
-       "1769801/f Chrissy.Seanie 1000/t 900 2100/F": "continue/42 72/farmer 35 73 3 Chrissy.Seanie 43 72 0 Vincent 42 72 1/skippable/pause 1500/speak Vincent \"Hey lady, I'm bored. $0\"/speak Chrissy.Seanie \"Good to know. $2\"/speak Vincent \"Can you do something funny? $0\"/speak Chrissy.Seanie \"Why don't you ask your burnout brother? $2\"/speak Vincent \"C'mon pleeeeeeease. $3\"/speak Chrissy.Seanie \"No. $2\"/speak Vincent \"Pleeeeeeeease?\"/speak Chrissy.Seanie \"OKAY FINE! $5\"/stopMusic/faceDirection Chrissy.Seanie 3/move farmer 7 0 0 true/pause 500/emote farmer 8/waitForAllStationary/pause 800/playSound newRecipe/message \"Chrissy begins shuffling cards\"/playMusic playful/speak Vincent \"What are you doing? $3\"/speak Chrissy.Seanie \"I'm gonna do a magic trick. $2#$b# Pick a card from the top of the deck.\"/playSound pickUpItem/message \"Vincent picks a card and stares at it.\"/speak Chrissy.Seanie \"Okay, memorize that card.\"/speak Vincent \"Right!\"/emote Vincent 16/pause 400/speak Chrissy.Seanie \"Okay, got it? Now put it back in the deck wherever you want.\"/playSound dwop/message \"Vincent puts the card back.\"/message \"Chrissy.Seanie proceeds to shuffle the deck several times, and then throws whole the deck of cards onto the floor.\"/playSound dwoop/message \"She holds one up.\"/speak Chrissy.Seanie \"Was this your card? $1\"/stopMusic/emote Vincent 40/pause 400/speak Vincent \"I don't remember.\"/speak Chrissy.Seanie \"Of course you don't... $2\"/speak Vincent \"That was fun, thank you miss!\"/speed Vincent 3/move Vincent -12 0 1 true/pause 2000/advancedMove farmer false 0 -1/pause 500/faceDirection farmer 1/speak Chrissy.Seanie \"$q 6699 null \"#You look at the card Chrissy.Seanie was holding. You notice it was not his card, what do you say?#$r 66 0 event_MagicTruth#That’s not his card...#$r 6699 40 event_MagicLie#*lie* “Wow! You got it, that’s pretty cool.\"/playMusic springtown/speak Chrissy.Seanie \"Let me try it again, I KNOW I’ll get it right this time. You don’t mind staying right?\"/emote farmer 32/pause 500/end",
+       "1769801/f Chrissy.Seanie 1000/t 900 2100/F": "continue/42 72/farmer 35 73 3 Chrissy.Seanie 43 72 0 Vincent 42 72 1/skippable/pause 1500/speak Vincent \"Hey lady, I'm bored. $0\"/speak Chrissy.Seanie \"Good to know. $2\"/speak Vincent \"Can you do something funny? $0\"/speak Chrissy.Seanie \"Why don't you ask your burnout brother? $2\"/speak Vincent \"C'mon pleeeeeeease. $3\"/speak Chrissy.Seanie \"No. $2\"/speak Vincent \"Pleeeeeeeease?\"/speak Chrissy.Seanie \"OKAY FINE! $5\"/stopMusic/faceDirection Chrissy.Seanie 3/move farmer 7 0 0 true/pause 500/emote farmer 8/waitForAllStationary/pause 800/playSound newRecipe/message \"Chrissy begins shuffling cards\"/playMusic playful/speak Vincent \"What are you doing? $3\"/speak Chrissy.Seanie \"I'm gonna do a magic trick. $2#$b# Pick a card from the top of the deck.\"/playSound pickUpItem/message \"Vincent picks a card and stares at it.\"/speak Chrissy.Seanie \"Okay, memorize that card.\"/speak Vincent \"Right!\"/emote Vincent 16/pause 400/speak Chrissy.Seanie \"Okay, got it? Now put it back in the deck wherever you want.\"/playSound dwop/message \"Vincent puts the card back.\"/message \"Chrissy.Seanie proceeds to shuffle the deck several times, and then throws whole the deck of cards onto the floor.\"/playSound dwoop/message \"She holds one up.\"/speak Chrissy.Seanie \"Was this your card? $1\"/stopMusic/emote Vincent 40/pause 400/speak Vincent \"I don't remember.\"/speak Chrissy.Seanie \"Of course you don't... $2\"/speak Vincent \"That was fun, thank you miss!\"/speed Vincent 3/move Vincent -12 0 1 true/pause 2000/advancedMove farmer false 0 -1/pause 500/faceDirection farmer 1/speak Chrissy.Seanie \"$q 6699 null \"#You look at the card Chrissy was holding. You notice it was not his card, what do you say?#$r 66 0 event_MagicTruth#That’s not his card...#$r 6699 40 event_MagicLie#*lie* “Wow! You got it, that’s pretty cool.\"/playMusic springtown/speak Chrissy.Seanie \"Let me try it again, I KNOW I’ll get it right this time. You don’t mind staying right?\"/emote farmer 32/pause 500/end",
    },
    },
 
@@ -220,7 +240,7 @@
     },
 
     {
-      "LogName": "Heart Event 6.5",
+      "LogName": "Heart Event 6.5 At Door",
        "Action": "EditData",
        "Target": "Data/Events/farm",
        "Entries": {
@@ -235,6 +255,16 @@
         "Entries": {
           "17698031/f Chrissy.Seanie 1500/e 1769803/x ChrissyMail.SecretWoods": "null"
       },
-      },
+    },
+    {
+      "LogName": "Heart Event 6.5 Woods",
+       "Action": "EditData",
+       "Target": "Data/Events/woods",
+       "Entries": {
+         "1769804/f Chrissy.Seanie 1500/n ChrissyMail.SecretWoods/e 1769802/t 1200 2000": "continue/26 9/farmer 28 13 0 Chrissy.Seanie 25 9 1/skippable/pause 300/move farmer 0 -4 0/move farmer -2 0 3/speak Chrissy.Seanie \"Hey @. $3#$b# Thanks for coming out today.$6\"/stopMusic/speak Chrissy.Seanie \"I just wanted the opportunity to explain everything to you. $3#$b# Because believe it or not, you might just be my best friend in the valley. $4\"/playMusic desolate/speak Chrissy.Seanie \"What you heard in my Uncle’s house the other day wasn’t a lie. $3#$b# I am on the run from the feds for tax evasion.$3#$b# You see the thing is... $3#$b# Tax evasion is actually really cool and based. $4#$b# I used to work for a prominent accounting firm in Zuzu City. $3#$b# And I realized if I just... didn’t pay my taxes...$3#$b# Then that would mean I would have more money. $1#$b# And if had more money, I could get more magic tricks. $7#$b# After that, I had to do the greatest magic trick of all...$3#$b# Vehicular Manslaughter.\"/speak Chrissy.Seanie \"Just kidding, you knew what I meant. $7\"/speak Chrissy.Seanie \"Now my whole family won’t talk to me. $3#$b# Except Uncle Lew. $3#$b# And I was awful to him.\"/stopMusic/speak Chrissy.Seanie \"$q 6799 null \"#How do I tell him I’m sorry @?#$r 67 50 event_LewisTalk#Just talk to him, I’m sure that he’ll understand.#$r 67 30 event_LewisSocks#Hide all his socks, until he runs out. Then he’ll ask you to go to the store to buy more. And you can bond on the trip.#$r 67 10 event_LewisScream#AHHHHHHHHHHHHH\"/playMusic sweet/speak Chrissy.Seanie \"Even though Uncle Lew can be kind of a crumb sometimes, he’s actually really nice. $1#$b# He’s just stressed about the pressure of being the mayor. $0#$b# Which doesn’t really seem like a stressful job outside of picking up all of your wine. $7\"/speak Chrissy.Seanie \"Thanks for talking to me today @. You really helped me out. $4#$b# I really owe you one. $1\"/stopMusic/pause 1000/speak Chrissy.Seanie \"Alright, if I don’t leave this forest right now, I’m going to crap my pants. $4#$b# Time to annihilate the nearest toilet! $7\"/move Chrissy.Seanie 0 3 2/move Chrissy.Seanie 20 0 1 true/pause 3000/message \"You also have the sudden urge to take a gigantic poop.\"/advancedMove farmer false 4 0 0 2 10 0/pause 2000/globalFade/viewport -1000 -1000/end dialogue Chrissy.Seanie \"I apologized to my Uncle Lew. $0#$b# He apologized too. $1#$e# Turns out he was feeling awful about everything he said to me. $0#$b# That’s the nice thing about family, they’re always around. $1#$e# Or at least they’re supposed to be... $3\"",
+     },
+     },
+
+
     ]
 }
