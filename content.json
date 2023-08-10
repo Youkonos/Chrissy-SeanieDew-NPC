@@ -26,7 +26,7 @@
   "Action": "EditData",
   "Target": "Data/NPCDispositions",
   "Entries": {
-    "Chrissy": "adult/rude/outgoing/negative/female/datable//other/spring 18/Lewis 'Uncle Lew'/ManorHouse 2 8/Chrissy"
+    "Chrissy.Seanie": "adult/rude/outgoing/negative/female/datable//other/spring 18/Lewis 'Uncle Lew'/ManorHouse 2 8/Chrissy"
     }
 },
 
@@ -34,14 +34,14 @@
       {
         "LogName": "1 Load Chrissy Char",
       "Action": "Load",
-       "Target": "Characters/Chrissy",
+       "Target": "Characters/Chrissy.Seanie",
        "FromFile": "assets/Characters/Chrissy.png",
           },
 
       {
       "LogName": "1 Load Chrissy Port",
        "Action": "Load",
-       "Target": "Portraits/Chrissy",
+       "Target": "Portraits/Chrissy.Seanie",
         "FromFile": "assets/Portraits/Chrissy.png",
       },
 
@@ -63,7 +63,7 @@
 
   {				"LogName": "1Load Base Dialogue",
           "Action": "Load",
-          "Target": "Characters/Dialogue/Chrissy",
+          "Target": "Characters/Dialogue/Chrissy.Seanie",
           "FromFile": "data/Dialogue/Chrissy.json",
   },
 
@@ -78,7 +78,7 @@
   {
       "LogName": "1Load Schedule",
       "Action": "Load",
-      "Target": "Characters/schedules/Chrissy",
+      "Target": "Characters/schedules/Chrissy.Seanie",
       "FromFile": "data/Schedule.json"
     },
 
@@ -88,7 +88,7 @@
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",
       "Entries": {
-          "Chrissy": "This is incredible! I wanna slurp yah! $6/-5 305 272 306 307 308 807/Wow, you're actually not a complete moron. This is pretty neat. $1//This is cringe. $2//This reminds me of the time my little brother drank a candle, are you as thick as him? $2/-4/I AM THE LORD OF DARKNESS. $8// "
+          "Chrissy.Seanie": "This is incredible! I wanna slurp yah! $6/-5 305 272 306 307 308 807/Wow, you're actually not a complete moron. This is pretty neat. $1//This is cringe. $2//This reminds me of the time my little brother drank a candle, are you as thick as him? $2/-4/I AM THE LORD OF DARKNESS. $8// "
       }
   },
 
@@ -100,7 +100,7 @@
       "Action": "EditData",
       "Target": "Data/animationDescriptions",
       "Entries": {
-          "chrissy_sleep": "29/29/29",
+          "chrissy.seanie_sleep": "29/29/29",
 
       }
   },
@@ -138,8 +138,8 @@
 "Action": "EditData",
 "Target": "Data/EngagementDialogue",
 "Entries": {
-  "Chrissy0": "MARRIAGE IS AWESOME. I CANNOT WAIT. $4#$e# FOREVER LOVE.$1",
-  "Chrissy1": "I seriously can't believe I'm so lucky. $4#$e# Back on my home planet, we don't do weddings, so I never thought this would happen to me! $4",
+  "Chrissy.Seanie0": "MARRIAGE IS AWESOME. I CANNOT WAIT. $4#$e# FOREVER LOVE.$1",
+  "Chrissy.Seanie1": "I seriously can't believe I'm so lucky. $4#$e# Back on my home planet, we don't do weddings, so I never thought this would happen to me! $4",
   },
 },
 
@@ -148,14 +148,14 @@
   "Action": "EditData",
   "Target": "Characters/Dialogue/rainy",
   "Entries": {
-      "Chrissy": "I love rainy days. $1#$e# Just the sound of the drops hitting the window soothes me. $1#$b# I'm not going soft, I just like the sky water! $4",
+      "Chrissy.Seanie": "I love rainy days. $1#$e# Just the sound of the drops hitting the window soothes me. $1#$b# I'm not going soft, I just like the sky water! $4",
       },
   },
 
   //Fighting with Lewis dialogue.
   {
     "Action": "EditData",
-    "Target": "Characters/Dialogue/Chrissy",
+    "Target": "Characters/Dialogue/Chrissy.Seanie",
     "When": {"HasSeenEvent |contains=1769804": false,
               "HasSeenEvent |contains=1769802": true,},
     "Entries": {
@@ -171,9 +171,9 @@
 {
   "Action": "EditData",
   "Target": "Characters/Dialogue/rainy",
-  "When": {"Hearts:Chrissy": "9, 10, 11, 12, 13, 14"},
+  "When": {"Hearts:Chrissy.Seanie": "9, 10, 11, 12, 13, 14"},
   "Entries": {
-      "Chrissy": "I love rainy days almost as much as I love you $1",
+      "Chrissy.Seanie": "I love rainy days almost as much as I love you $1",
       },
   },
 
@@ -184,9 +184,9 @@
  "Action": "EditData",
  "Target": "Data/Events/Forest",
  "Entries": {
-  "1116012/f Chrissy 500/d Mon Wed Thu Fri Sat Sun/t 700 2100/F": "continue/-1000 -1000/farmer 70 37 2 Chrissy 70 46 2/skippable/specificTemporarySprite pennyFieldTrip/showframe Chrissy 16/fade/viewport 70 45 true/move farmer 0 5 2/stopMusic/emote Chrissy 56/playMusic poppy/speak Chrissy \"It's a Sunny Day, $8 #$b#I hope it stays that Way, $8#$b#My hair's just a little gray, $8 #$b#I just got a raise, $8 #$b#And I'm deserving of some praise, $8 #$b#So today we eat some mayonnaise, $8\"/animate Chrissy false false 200 16 17 18 19 18 19 18 19 18/playSound gulp/message \"Chrissy brings the jar of mayonnaise to her mouth, and chugs it, in one gulp!\"/showframe Chrissy 0/speak Chrissy \"Mayonnaise Monday, $8#$b#It's Mayonnaise Monday! $8\"/message \"Chrissy grabs a second jar of mayonnaise\"/showframe Chrissy 16/stopMusic/question fork0 \"What should you do?#I can't let this go on any longer.#I'll just leave her alone.#\"/fork MayoTime/move farmer -12 0 1/end warpOut/",
-  "MayoTime": "move farmer 0 3 2/faceDirection Chrissy 0/speak Chrissy \"@, what are you doing here?$2#$b#I swear, it's not what it looks like. This isn't a normal thing I do. $3#$b# It- It's a family tradition. I- I know it's a little weird, but my brother started it when we were kids. When I miss him, I have my Mayonnaise Mondays.$3\"/question fork1 \"You don't think it's weird right?#I get it. I miss my family sometimes too.#I'm not sure I can be your friend anymore.#\"/fork MayoTime2/speak Chrissy \"I completely understand. $3\"/friendship Chrissy -20/move farmer 0 -12 0 true/pause 1000/globalFade/viewport -1000 -1000/end",
-  "MayoTime2": "friendship Chrissy 50/playMusic ragtime/speak Chrissy \"Really? I knew you were cool @.$1#$b# Please just don't tell anybody about this?$4#$b#Especially not Uncle Lew.$7#$b# I'm glad it was someone like you who found me. $7\"/speak Chrissy \"Mayonnaise Monday.$8\"/pause 1000/globalFade/viewport -1000 -1000/end dialogue Chrissy \"Thanks for keeping my secret $1#$b# I owe you one. $6#$b#I'll see if I can find any 'additional tax write offs' for you this spring.\"",
+  "1116012/f Chrissy.Seanie 500/d Mon Wed Thu Fri Sat Sun/t 700 2100/F": "continue/-1000 -1000/farmer 70 37 2 Chrissy.Seanie 70 46 2/skippable/specificTemporarySprite pennyFieldTrip/showframe Chrissy.Seanie 16/fade/viewport 70 45 true/move farmer 0 5 2/stopMusic/emote Chrissy.Seanie 56/playMusic poppy/speak Chrissy.Seanie \"It's a Sunny Day, $8 #$b#I hope it stays that Way, $8#$b#My hair's just a little gray, $8 #$b#I just got a raise, $8 #$b#And I'm deserving of some praise, $8 #$b#So today we eat some mayonnaise, $8\"/animate Chrissy.Seanie false false 200 16 17 18 19 18 19 18 19 18/playSound gulp/message \"Chrissy.Seanie brings the jar of mayonnaise to her mouth, and chugs it, in one gulp!\"/showframe Chrissy.Seanie 0/speak Chrissy.Seanie \"Mayonnaise Monday, $8#$b#It's Mayonnaise Monday! $8\"/message \"Chrissy.Seanie grabs a second jar of mayonnaise\"/showframe Chrissy.Seanie 16/stopMusic/question fork0 \"What should you do?#I can't let this go on any longer.#I'll just leave her alone.#\"/fork MayoTime/move farmer -12 0 1/end warpOut/",
+  "MayoTime": "move farmer 0 3 2/faceDirection Chrissy.Seanie 0/speak Chrissy.Seanie \"@, what are you doing here?$2#$b#I swear, it's not what it looks like. This isn't a normal thing I do. $3#$b# It- It's a family tradition. I- I know it's a little weird, but my brother started it when we were kids. When I miss him, I have my Mayonnaise Mondays.$3\"/question fork1 \"You don't think it's weird right?#I get it. I miss my family sometimes too.#I'm not sure I can be your friend anymore.#\"/fork MayoTime2/speak Chrissy.Seanie \"I completely understand. $3\"/friendship Chrissy.Seanie -20/move farmer 0 -12 0 true/pause 1000/globalFade/viewport -1000 -1000/end",
+  "MayoTime2": "friendship Chrissy.Seanie 50/playMusic ragtime/speak Chrissy.Seanie \"Really? I knew you were cool @.$1#$b# Please just don't tell anybody about this?$4#$b#Especially not Uncle Lew.$7#$b# I'm glad it was someone like you who found me. $7\"/speak Chrissy.Seanie \"Mayonnaise Monday.$8\"/pause 1000/globalFade/viewport -1000 -1000/end dialogue Chrissy.Seanie \"Thanks for keeping my secret $1#$b# I owe you one. $6#$b#I'll see if I can find any 'additional tax write offs' for you this spring.\"",
 },
 },
 */
@@ -195,9 +195,9 @@
    "Action": "EditData",
    "Target": "Data/Events/Forest",
    "Entries": {
-    "1769800/f Chrissy 500/d Mon Wed Thu Fri Sat Sun/t 700 2100/F": "continue/-1000 -1000/farmer 70 37 2 Chrissy 70 46 2/skippable/specificTemporarySprite pennyFieldTrip/showframe Chrissy 16/addObject 71 45 306/fade/viewport 70 45 true/move farmer 0 5 2/stopMusic/pause 200/emote farmer 8/pause 500/emote Chrissy 56/playMusic poppy/pause 500/speak Chrissy \"It's a Sunny Day, $8 #$b#I hope it stays that Way, $8#$b#My hair's just a little gray, $8 #$b#I just got a raise, $8 #$b#And I'm deserving of some praise, $8 #$b#So today we eat some mayonnaise, $8\"/animate Chrissy false false 200 16 17 18 19 18 19 18 19 18/pause 300/playSound gulp/pause 300/playSound gulp/pause 300/emote farmer 16/pause 1000/showframe Chrissy 0/speak Chrissy \"Mayonnaise Monday, $8#$b#It's Mayonnaise Monday! $8\"/pause 500/pause 400/faceDirection Chrissy 1/pause 200/playSound pickUpItem/removeObject 71 45 306/pause 500/faceDirection Chrissy 2 true/showframe Chrissy 16/emote Chrissy 56/pause 300/stopMusic/emote farmer 12/pause 500/question fork0 \"What should you do?#I can't let this go on any longer.#I'll just leave her alone.#\"/fork MayoTime1/move farmer -12 0 1/end warpOut/",
-    "MayoTime1": "move farmer 0 3 2/pause 100/emote farmer 40/pause 200/emote Chrissy 8/faceDirection Chrissy 1 true/pause 100/faceDirection Chrissy 0/pause 300/jump Chrissy 4/addTemporaryActor MayoTemp 16 16 70 46 2 false/jump MayoTemp 16/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/pause 500/playSound throwDownITem/showframe MayoTemp 1/pause 600/faceDirection farmer 1 true/faceDirection Chrissy 1/pause 1000/emote farmer 40/pause 400/faceDirection Chrissy 0/faceDirection farmer 2/pause 600/speak Chrissy \"@, what are you doing here?$2#$b#I swear, it's not what it looks like. This isn't a normal thing I do. $3#$b#It- It's a family tradition. I- I know it's a little weird, but my brother started it when we were kids. When I miss him, I have my Mayonnaise Mondays.$3\"/pause 500/question fork1 \"You don't think it's weird right?#I get it. I miss my family sometimes too.#I'm not sure I can be your friend anymore.#\"/fork MayoTime21/emote Chrissy 28/pause 300/speak Chrissy \"I completely understand. $3\"/friendship Chrissy -20/move farmer 0 -12 0 true/pause 1000/globalFade/viewport -1000 -1000/end",
-    "MayoTime21": "pause 200/friendship Chrissy 50/emote Chrissy 32/pause 500/playMusic ragtime/speak Chrissy \"Really? I knew you were cool @.$1#$b# Please just don't tell anybody about this?$4#$b#Especially not Uncle Lew.$7#$b# I'm glad it was someone like you who found me. $7\"/pause 300/emote farmer 32/pause 500/speak Chrissy \"Mayonnaise Monday.$8\"/pause 1000/globalFade/viewport -1000 -1000/end dialogue Chrissy \"Thanks for keeping my secret $1#$b# I owe you one. $6#$b# I'll see if I can find any 'additional tax write offs' for you this spring.\"",
+    "1769800/f Chrissy.Seanie 500/d Mon Wed Thu Fri Sat Sun/t 700 2100/F": "continue/-1000 -1000/farmer 70 37 2 Chrissy.Seanie 70 46 2/skippable/specificTemporarySprite pennyFieldTrip/showframe Chrissy.Seanie 16/addObject 71 45 306/fade/viewport 70 45 true/move farmer 0 5 2/stopMusic/pause 200/emote farmer 8/pause 500/emote Chrissy.Seanie 56/playMusic poppy/pause 500/speak Chrissy.Seanie \"It's a Sunny Day, $8 #$b#I hope it stays that Way, $8#$b#My hair's just a little gray, $8 #$b#I just got a raise, $8 #$b#And I'm deserving of some praise, $8 #$b#So today we eat some mayonnaise, $8\"/animate Chrissy.Seanie false false 200 16 17 18 19 18 19 18 19 18/pause 300/playSound gulp/pause 300/playSound gulp/pause 300/emote farmer 16/pause 1000/showframe Chrissy.Seanie 0/speak Chrissy.Seanie \"Mayonnaise Monday, $8#$b#It's Mayonnaise Monday! $8\"/pause 500/pause 400/faceDirection Chrissy.Seanie 1/pause 200/playSound pickUpItem/removeObject 71 45 306/pause 500/faceDirection Chrissy.Seanie 2 true/showframe Chrissy.Seanie 16/emote Chrissy.Seanie 56/pause 300/stopMusic/emote farmer 12/pause 500/question fork0 \"What should you do?#I can't let this go on any longer.#I'll just leave her alone.#\"/fork MayoTime1/move farmer -12 0 1/end warpOut/",
+    "MayoTime1": "move farmer 0 3 2/pause 100/emote farmer 40/pause 200/emote Chrissy.Seanie 8/faceDirection Chrissy.Seanie 1 true/pause 100/faceDirection Chrissy.Seanie 0/pause 300/jump Chrissy.Seanie 4/addTemporaryActor MayoTemp 16 16 70 46 2 false/jump MayoTemp 16/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/positionOffset MayoTemp 5 0/pause 25/pause 500/playSound throwDownITem/showframe MayoTemp 1/pause 600/faceDirection farmer 1 true/faceDirection Chrissy.Seanie 1/pause 1000/emote farmer 40/pause 400/faceDirection Chrissy.Seanie 0/faceDirection farmer 2/pause 600/speak Chrissy.Seanie \"@, what are you doing here?$2#$b#I swear, it's not what it looks like. This isn't a normal thing I do. $3#$b#It- It's a family tradition. I- I know it's a little weird, but my brother started it when we were kids. When I miss him, I have my Mayonnaise Mondays.$3\"/pause 500/question fork1 \"You don't think it's weird right?#I get it. I miss my family sometimes too.#I'm not sure I can be your friend anymore.#\"/fork MayoTime21/emote Chrissy.Seanie 28/pause 300/speak Chrissy.Seanie \"I completely understand. $3\"/friendship Chrissy.Seanie -20/move farmer 0 -12 0 true/pause 1000/globalFade/viewport -1000 -1000/end",
+    "MayoTime21": "pause 200/friendship Chrissy.Seanie 50/emote Chrissy.Seanie 32/pause 500/playMusic ragtime/speak Chrissy.Seanie \"Really? I knew you were cool @.$1#$b# Please just don't tell anybody about this?$4#$b#Especially not Uncle Lew.$7#$b# I'm glad it was someone like you who found me. $7\"/pause 300/emote farmer 32/pause 500/speak Chrissy.Seanie \"Mayonnaise Monday.$8\"/pause 1000/globalFade/viewport -1000 -1000/end dialogue Chrissy.Seanie \"Thanks for keeping my secret $1#$b# I owe you one. $6#$b# I'll see if I can find any 'additional tax write offs' for you this spring.\"",
   },
   },
 
@@ -206,7 +206,7 @@
      "Action": "EditData",
      "Target": "Data/Events/Town",
      "Entries": {
-       "1769801/f Chrissy 1000/t 900 2100/F": "continue/42 72/farmer 35 73 3 Chrissy 43 72 0 Vincent 42 72 1/skippable/pause 1500/speak Vincent \"Hey lady, I'm bored. $0\"/speak Chrissy \"Good to know. $2\"/speak Vincent \"Can you do something funny? $0\"/speak Chrissy \"Why don't you ask your burnout brother? $2\"/speak Vincent \"C'mon pleeeeeeease. $3\"/speak Chrissy \"No. $2\"/speak Vincent \"Pleeeeeeeease?\"/speak Chrissy \"OKAY FINE! $5\"/stopMusic/faceDirection Chrissy 3/move farmer 7 0 0 true/pause 500/emote farmer 8/waitForAllStationary/pause 800/playSound newRecipe/message \"Chrissy begins shuffling cards\"/playMusic playful/speak Vincent \"What are you doing? $3\"/speak Chrissy \"I'm gonna do a magic trick. $2#$b# Pick a card from the top of the deck.\"/playSound pickUpItem/message \"Vincent picks a card and stares at it.\"/speak Chrissy \"Okay, memorize that card.\"/speak Vincent \"Right!\"/emote Vincent 16/pause 400/speak Chrissy \"Okay, got it? Now put it back in the deck wherever you want.\"/playSound dwop/message \"Vincent puts the card back.\"/message \"Chrissy proceeds to shuffle the deck several times, and then throws whole the deck of cards onto the floor.\"/playSound dwoop/message \"She holds one up.\"/speak Chrissy \"Was this your card? $1\"/stopMusic/emote Vincent 40/pause 400/speak Vincent \"I don't remember.\"/speak Chrissy \"Of course you don't... $2\"/speak Vincent \"That was fun, thank you miss!\"/speed Vincent 3/move Vincent -12 0 1 true/pause 2000/advancedMove farmer false 0 -1/pause 500/faceDirection farmer 1/speak Chrissy \"$q 6699 null \"#You look at the card Chrissy was holding. You notice it was not his card, what do you say?#$r 66 0 event_MagicTruth#That’s not his card...#$r 6699 40 event_MagicLie#*lie* “Wow! You got it, that’s pretty cool.\"/playMusic springtown/speak Chrissy \"Let me try it again, I KNOW I’ll get it right this time. You don’t mind staying right?\"/emote farmer 32/pause 500/end",
+       "1769801/f Chrissy.Seanie 1000/t 900 2100/F": "continue/42 72/farmer 35 73 3 Chrissy.Seanie 43 72 0 Vincent 42 72 1/skippable/pause 1500/speak Vincent \"Hey lady, I'm bored. $0\"/speak Chrissy.Seanie \"Good to know. $2\"/speak Vincent \"Can you do something funny? $0\"/speak Chrissy.Seanie \"Why don't you ask your burnout brother? $2\"/speak Vincent \"C'mon pleeeeeeease. $3\"/speak Chrissy.Seanie \"No. $2\"/speak Vincent \"Pleeeeeeeease?\"/speak Chrissy.Seanie \"OKAY FINE! $5\"/stopMusic/faceDirection Chrissy.Seanie 3/move farmer 7 0 0 true/pause 500/emote farmer 8/waitForAllStationary/pause 800/playSound newRecipe/message \"Chrissy begins shuffling cards\"/playMusic playful/speak Vincent \"What are you doing? $3\"/speak Chrissy.Seanie \"I'm gonna do a magic trick. $2#$b# Pick a card from the top of the deck.\"/playSound pickUpItem/message \"Vincent picks a card and stares at it.\"/speak Chrissy.Seanie \"Okay, memorize that card.\"/speak Vincent \"Right!\"/emote Vincent 16/pause 400/speak Chrissy.Seanie \"Okay, got it? Now put it back in the deck wherever you want.\"/playSound dwop/message \"Vincent puts the card back.\"/message \"Chrissy.Seanie proceeds to shuffle the deck several times, and then throws whole the deck of cards onto the floor.\"/playSound dwoop/message \"She holds one up.\"/speak Chrissy.Seanie \"Was this your card? $1\"/stopMusic/emote Vincent 40/pause 400/speak Vincent \"I don't remember.\"/speak Chrissy.Seanie \"Of course you don't... $2\"/speak Vincent \"That was fun, thank you miss!\"/speed Vincent 3/move Vincent -12 0 1 true/pause 2000/advancedMove farmer false 0 -1/pause 500/faceDirection farmer 1/speak Chrissy.Seanie \"$q 6699 null \"#You look at the card Chrissy.Seanie was holding. You notice it was not his card, what do you say?#$r 66 0 event_MagicTruth#That’s not his card...#$r 6699 40 event_MagicLie#*lie* “Wow! You got it, that’s pretty cool.\"/playMusic springtown/speak Chrissy.Seanie \"Let me try it again, I KNOW I’ll get it right this time. You don’t mind staying right?\"/emote farmer 32/pause 500/end",
    },
    },
 
@@ -215,10 +215,26 @@
       "Action": "EditData",
       "Target": "Data/Events/ManorHouse",
       "Entries": {
-        "1769802/f Chrissy 1500": "shaneTheme/6 7/farmer -100 -100 0 Lewis 5 5 1 Chrissy 7 5 3/skippable/pause 1500/playSound doorClose/warp farmer 4 11 0/speak Lewis \"CJ, I’ve looked over this paperwork, THREE times now. $2#$b# Something isn’t adding up. $3\"/speak Chrissy \"Uncle Lew, I told you not to call me that anymore.$2\"/speak Lewis \"Sorry, Chrissy.$5#$b# But something isn’t adding up here.$2#$b# I thought you put all that behind you.$2\"/speak Chrissy \"I did! I promise.$2\"/speak Lewis \"You said you were going to be taking this seriously. $4#$b# But it seems like you’re just back to your old ways.\"/speak Chrissy \"I’m not, I promise! $3#$b# Why can’t you trust me on this?\"/speak Lewis \"Do you know how risky it was for the MAYOR of Pelican Town to take in someone on the run from the feds? $3\"/speak Chrissy \"Oh, you LOVE to just throw that in my face Uncle Lew. $2#$b# What am I supposed to do? UNcommit tax fraud? $5\"/speak Lewis \"Well, you could at least take your job a bit more seriously. $3\"/speak Chrissy \" I take it more seriously than you! $5#$b# You’re the one always taking 2 hour lunch breaks at the ranch!\"/speak Lewis \"What I do in my personal time is NONE of your concern! $3\"/speak Chrissy \"Well is it my concern that you’re a sad, old man, who won’t even commit to the one person in his life that cares about him? $7#$b# All for what? To be the mayor of some broken down town? $7#$b# The town is in shambles anyway.$7#$b# I heard that Pierre is thinking of moving his business to Grampleton.\"/speak Lewis \"What? Is that true? $4\"/speak Chrissy \"How would you know? You know nothing about your own town. $6#$b# You’re a fraud of a mayor.\"/faceDirection Lewis 3/pause 1000/speak Lewis \"Maybe your tax evasion case isn’t the ONLY reason your family doesn’t talk to you anymore, CJ. $3\"/move Lewis 0 6 2/speak Lewis \"Sorry you had to see that, @. $2\"/playSound doorClose/warp Lewis 1000 1000/faceDirection Chrissy 2/speak Chrissy \"Would you just get out of here? $5#$b# This is none of your business.\"/faceDirection farmer 2/pause 200/playSound doorClose/warp farmer 1000 1000/pause 1000/globalFade/viewport -1000 -1000/end warpOut",
+        "1769802/f Chrissy.Seanie 1500": "shaneTheme/6 7/farmer -100 -100 0 Lewis 5 5 1 Chrissy.Seanie 7 5 3/addConversationTopic Chrissy6HWait 0/skippable/pause 1500/playSound doorClose/warp farmer 4 11 0/speak Lewis \"CJ, I’ve looked over this paperwork, THREE times now. $2#$b# Something isn’t adding up. $3\"/speak Chrissy.Seanie \"Uncle Lew, I told you not to call me that anymore.$2\"/speak Lewis \"Sorry, Chrissy.$5#$b# But something isn’t adding up here.$2#$b# I thought you put all that behind you.$2\"/speak Chrissy.Seanie \"I did! I promise.$2\"/speak Lewis \"You said you were going to be taking this seriously. $4#$b# But it seems like you’re just back to your old ways.\"/speak Chrissy.Seanie \"I’m not, I promise! $3#$b# Why can’t you trust me on this?\"/speak Lewis \"Do you know how risky it was for the MAYOR of Pelican Town to take in someone on the run from the feds? $3\"/speak Chrissy.Seanie \"Oh, you LOVE to just throw that in my face Uncle Lew. $2#$b# What am I supposed to do? UNcommit tax fraud? $5\"/speak Lewis \"Well, you could at least take your job a bit more seriously. $3\"/speak Chrissy.Seanie \" I take it more seriously than you! $5#$b# You’re the one always taking 2 hour lunch breaks at the ranch!\"/speak Lewis \"What I do in my personal time is NONE of your concern! $3\"/speak Chrissy.Seanie \"Well is it my concern that you’re a sad, old man, who won’t even commit to the one person in his life that cares about him? $7#$b# All for what? To be the mayor of some broken down town? $7#$b# The town is in shambles anyway.$7#$b# I heard that Pierre is thinking of moving his business to Grampleton.\"/speak Lewis \"What? Is that true? $4\"/speak Chrissy.Seanie \"How would you know? You know nothing about your own town. $6#$b# You’re a fraud of a mayor.\"/faceDirection Lewis 3/pause 1000/speak Lewis \"Maybe your tax evasion case isn’t the ONLY reason your family doesn’t talk to you anymore, CJ. $3\"/move Lewis 0 6 2/speak Lewis \"Sorry you had to see that, @. $2\"/playSound doorClose/warp Lewis 1000 1000/faceDirection Chrissy.Seanie 2/speak Chrissy.Seanie \"Would you just get out of here? $5#$b# This is none of your business.\"/faceDirection farmer 2/pause 200/playSound doorClose/warp farmer 1000 1000/pause 1000/globalFade/viewport -1000 -1000/end warpOut",
     },
     },
 
+    {
+      "LogName": "Heart Event 6.5",
+       "Action": "EditData",
+       "Target": "Data/Events/farm",
+       "Entries": {
+         "1769803/f Chrissy.Seanie 1500/A Chrissy6HWait/e 1769802": "continue/-10000 -1000/farmer -100 -100 2 Chrissy.Seanie 64 17 0/skippable/warp farmer -100 -100/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 400/emote farmer 8/speak Chrissy.Seanie \"Sorry you had to see that the other day $5#$b# My uncle was being so mean to me. $3#$b# Maybe I was a bit out of line too. $3#$b# I know I have a lot of explaining to do as your friend.$3#$b# If you can still consider me one. $3#$b# Just give me a little time. $1#$b# Welp, see you around!\"/end",
+     },
+     },
 
+     {
+       "LogName": "Heart Event 6.5 Mail",
+        "Action": "EditData",
+        "Target": "Data/Events/farm",
+        "Entries": {
+          "17698031/f Chrissy.Seanie 1500/e 1769803/x ChrissyMail.SecretWoods": "null"
+      },
+      },
     ]
 }
