@@ -135,7 +135,7 @@
 
     "ChrissyMail.SecretWoods": "Hi @,^I want to explain everything, so please meet me in the secret forest at noon. I promise I'm a good person.^^Thanks.^-Chrissy[#]Meet Me in the Woods",
     "ChrissyMail.Picnic": "Hey @,^Next Tuesday, come to the Cindersnap Forest. I want to do something special for all that you've done for me.^^And don't forget to bring your juicy bottom.^^-Chrissy[#]@.",
-    "ChrissyMail.MagicShow": "Dear @,^Tomorrow I've decided to host a magic show in town, and everyone is invited. It would mean the world to me if you came.^I cannot wait to see you.^^You know what I mean. Don't make me say it to your face, you moron.^^-Chrissy[#]You better be there!",
+    "ChrissyMail.MagicShow": "Dear @,^I've decided to host a magic show in town, and everyone is invited. It would mean the world to me if you came.^I cannot wait to see you.^^You know what I mean. Don't make me say it to your face, you moron.^^-Chrissy[#]You better be there!",
     },
 },
 
@@ -279,7 +279,7 @@
          "Action": "EditData",
          "Target": "Data/Events/farm",
          "Entries": {
-           "17698061/f Chrissy.Seanie 1500/e 1769803/x ChrissyMail.Picnic": "null"
+           "17698061/f Chrissy.Seanie 1500/e 1769805/x ChrissyMail.Picnic": "null"
        },
      },
 
@@ -299,6 +299,23 @@
 
     },
     },
+    {
+      "LogName": "Heart Event 14 Mail",
+       "Action": "EditData",
+       "Target": "Data/Events/farm",
+       "Entries": {
+         "17698071/f Chrissy.Seanie 3500/x ChrissyMail.MagicShow": "null"
+     },
+   },
+   {
+     "LogName": "Heart Event 14 ",
+      "Action": "EditData",
+      "Target": "Data/Events/town",
+      "Entries": {
+        "1769807/f Chrissy.Seanie 3500/n ChrissyMail.MagicShow/t 800 2000": "playful/29 70/farmer 32 64 2 Chrissy.Seanie 29 67 2 Pam 26 70 0 Penny 27 70 0 Sam 28 70 0 Sebastian 29 70 0 Shane 25 70 0 Emily 32 70 3 Harvey 27 72 0 Maru 27 72 0 Leah 31 71 0 Elliott 30 71 0 Abigail 26 68 1 Caroline 26 67 1 Pierre 26 69 1 Gus 32 69 3 Lewis 32 68 3 Haley 24 69 1 Clint 28 72 0 Alex 30 72 0 George 31 72 0 Evelyn 32 72 0 Jas 30 70 0 Vincent 31 70 0 Jodi 28 71 0 Marnie 25 71 0 Robin 27 71 0 Demetrius 28 71 0 Willy 25 68 1/skippable/move farmer 0 3 3/faceDirection Chrissy.Seanie 1/speak Chrissy.Seanie \"@! You’re here! $1#$b# Now the show can get started.\"/faceDirection Chrissy.Seanie 2/message \"You proceed to watch Chrissy’s magic show. She starts off mean and nervous, but eventually she does a really good job.\"/message \"The scene is awesome. Seriously. And in it you can tell that she’s working through the trauma of losing her family, and that she’s like finally happy.\"/message \"Oh yeah, and then this guy comes.\"/addTemporaryActor LeahExMale 16 32 28 63 2 true/move LeahExMale 0 4 2/faceDirection Chrissy.Seanie 3/message \"That’s Chrissy’s little brother. Remember? The one she was projecting onto in the 4 heart event with Vincent. Remember that?\"/message \" Well he comes and they make amends, and it like literally is this like tear jerking, awe inspiring scene.\"/message \" It’s seriously beautiful, like I’m kind of getting choked up just typing these text boxes.\"/message \"Anyway, yeah you watch it for a while and you’re like super emotional.\"/faceDirection Chrissy.Seanie 2/speak Chrissy.Seanie \"This is probably the best day of my entire life. $1#$b# Thank you all for being here.\"/speak Lewis \"I am so happy.$1\"/speak Willy \"And I’m Willy! $3\"/speak Caroline \"Just another average day in the valley. $5\"/message \"Everyone laughs, and a few even cry.\"/pause 500/globalFade/viewport -1000 -1000/end"
+    },
+  },
+
 
     ]
 }
